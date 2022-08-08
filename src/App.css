@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-size: cover;
+}
+.cardParent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap:50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+
+}
+.btn{
+  width:180px;
+  height: 45px;
+  border-radius: 28px;
+  
+}
+.buTTon{
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.cards{
+  
+  padding: 30px;
+  border-radius: 10px;
+  background-color:whitesmoke;
+
+}
+.title{
+  color: gray;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.title-num,.dolor{
+  margin-bottom: 10px;
+}
+.dolor{
+  font-size: 50px;
+  
+}
+.title-num{
+  text-align: center;
+  font-weight: 100;
+}
+.underLine{
+border: 0.7px solid gray;
+background-color: gray;
+
+}
+ul,li {
+  margin-bottom: 1rem;
+  margin-top: 15px;
+  list-style-type: none;
+}
+.cards{
+  cursor:pointer;
+  transition: 0.4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards:hover {
+  transform: scale(0.95, 0.95);
 }
+
+
